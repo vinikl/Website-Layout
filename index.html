@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project 5</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+	<script defer src="https://friconix.com/cdn/friconix.js"></script>
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<div class="nav-links" id="navLinks">
+				<i class="fi-xwluxl-times-wide" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Content</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+			<i class="fi-xnsuxl-three-bars-solid" onclick="showMenu()"></i>
+			<div class="search" id="search-bar">
+				<input class="search-txt" type="text" placeholder="Search...">
+				<button class="submit"><i class="fi-xnsuhl-search" onclick=""></i></button>
+			</div>			
+		</nav>
+
+		<div class="text-box">
+			<h1>Hello World</h1>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quam cum ratione!</p>
+			<a href="" class="hero-btn">Get Started!</a>
+		</div>
+
+	</section>
+
+	<section class="section2">
+		<h1>Big Headline</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quibusdam.</p>
+
+		<div class="row">
+			<div class="section2-col">
+				<h3>Text1</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga magni laborum exercitationem temporibus quasi labore aspernatur molestiae voluptas consectetur!</p>
+			</div>
+			<div class="section2-col">
+				<h3>Text2</h3>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae assumenda nemo vitae, nulla est quaerat velit dolorum quibusdam voluptate dicta laborum aliquid!</p>
+			</div>
+			<div class="section2-col">
+				<h3>Text3</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione omnis deserunt necessitatibus exercitationem perspiciatis neque reiciendis temporibus laudantium?</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section3">
+		<h1>Another Content Space</h1>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, minus.</p>
+
+		<div class="row">
+			<div class="section3-col">
+				<img src="img/4-5.jpg">
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-content">
+			<p style="color:white">Follow us in our social media</p>
+			<ul class="social-media">
+				<li><a href="#"><i class="fi-snsuxl-facebook"></i></a></li>
+				<li><a href="#"><i class="fi-xnsuxl-instagram"></i></a></li>
+				<li><a href="#"><i class="fi-xnsuxl-linkedin"></i></a></li>
+				<li><a href="#"><i class="fi-xnsuxl-twitter-solid"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+	
+<!------------JavaScript for Toggle Menu and Search Box------------>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+
+		var searchBox = document.getElementById("search-bar");
+		var Icon = document.getElementsByClassName("submit")[0];
+
+		Icon.onclick=function(){	
+			searchBox.classList.toggle("active");
+		}
+	</script>
+</body>
+</html>
